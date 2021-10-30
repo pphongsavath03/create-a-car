@@ -12,7 +12,6 @@
   "scripts": {
     "start": "node server.js",
     "seed": "node seeds/index.js"
-
   },
   "name": "create-a-car",
   "description": "create a car",
