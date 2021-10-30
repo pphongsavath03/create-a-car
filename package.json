@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.2",
+    "node": "^17.0.1",
+    "nodemon": "^2.0.14",
+    "npm": "^8.1.2",
+    "sequelize": "^6.8.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seeds/index.js"
+  },
+  "name": "create-a-car",
+  "description": "create a car",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pphongsavath03/create-a-car.git"
+  },
+  "author": "Phon/Cooper/Desiree/Samira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pphongsavath03/create-a-car/issues"
+  },
+  "homepage": "https://github.com/pphongsavath03/create-a-car#readme"
+}
