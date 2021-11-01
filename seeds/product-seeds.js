@@ -1,4 +1,4 @@
-const { Product } = require('./models');
+const { Product } = require('../models');
 
 const productData = [
   {
@@ -11,19 +11,19 @@ const productData = [
     product_name: 'Model D',
     price: 39999.99,
     stock: 1,
-    category_id: 5,
+    category_id: 1,
   },
   {
     product_name: 'Model P',
     price: 49999.99,
     stock: 1,
-    category_id: 4,
+    category_id: 1,
   },
   {
     product_name: 'Model S',
     price: 100000.00,
     stock: 1,
-    category_id: 3,
+    category_id: 1,
   },
 ];
 
