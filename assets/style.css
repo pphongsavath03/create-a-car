@@ -1,3 +1,5 @@
+
+
 * {
 margin: 0;
 padding: 0;
@@ -203,6 +205,90 @@ main {
     padding: 20px 20px;
     border-radius: 10%;
 } 
+
+.car, .account {
+    padding: 15px;
+    font-size: 22px;
+    font-weight: 400;
+    list-style: none;
+}
+.car li {
+    display: inline;
+}
+a:hover {
+    color: goldenrod;
+}
+.model {
+    word-spacing: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.header {
+    font-size: px;
+    font-weight: 300;
+    padding: 35px;
+}
+h2 {
+    font-size: 30px;
+    margin-left: 15px;
+    color: goldenrod;
+}
+.description p {
+    margin-left: 15px;
+    font-size: 22px;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2.5%;
+    padding: 35px;
+    font-size: 14px;
+}
+.vehicle {
+    align-items: flex-start;
+}
+header {
+    font-size: 36px;
+    margin-left: 10px;
+    font-weight: bolder;
+    text-align: center;
+}
+header img {
+    text-align: center;
+}
+.vehicle img{    
+    display: flex;
+    opacity: 1;
+    width: 100%;
+    height: 50vh;
+    border-radius: 5%;
+    min-width: max-content;
+    min-height: max-content;
+    float:left;
+}
+.radio-container {
+    font-size: 18px;
+}
+.radio-container p {
+    font-weight: bold;
+}
+button {
+    margin: 20px;
+}
+.button {
+    font-size: 18px;
+    background-color: lightgrey;
+    color:black ;
+    border-radius: 10px;
+    padding: 10px;
+    opacity: 90%;
+    width: 100%;
+}
+.button:hover {
+    background-color: goldenrod;
+    opacity: 1;
+}
 
 @media only screen  and (max-width: 936px) {
     .card header {
