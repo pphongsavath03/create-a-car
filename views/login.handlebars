@@ -1,0 +1,63 @@
+<div class="sign-in">
+      <!--Need to add html link back to the home page-->
+      <div class="home"><a href="/">Create-A-Car</a></div>
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">
+            Log In
+          </button>
+          <button type="button" class="toggle-btn" onclick="register()">
+            Register
+          </button>
+        </div>
+        <form id="login-form" class="input-info" method="GET">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Username"
+            id="username"
+            required
+          />
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Enter Password"
+            id="password"
+            required
+          />
+          <input type="checkbox" class="check-box" /><span
+            >Remember Password</span
+          >
+          <button type="submit" class="submit-btn">Log In</button>
+        </form>
+        <form id="register" class="input-info" method="POST">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Choose Username"
+            required
+          />
+          <input
+            type="email"
+            class="input-field"
+            placeholder="Email Address"
+            required
+          />
+          <input
+            type="text"
+            class="input-field"
+            placeholder=" Create Password"
+            required
+          />
+          <input type="checkbox" class="check-box" /><span
+            >I agree to the terms & conditions</span
+          >
+          <button type="submit" class="submit-btn">Register</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/account-script.js"></script>
+ 
+  
