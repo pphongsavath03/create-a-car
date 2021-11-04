@@ -1,11 +1,15 @@
 * {
-    box-sizing: border-box
+margin: 0;
+padding: 0;
+box-sizing: border-box
+
 }
 
 body {
     width: 100%;
     margin: 0;
-    background-image: url("images/highwaybackdrop.jpg");  
+    background-image:url(./images/highwaybackdrop.jpg) ; 
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .nav-container {
@@ -13,6 +17,7 @@ body {
     padding: 3px;
     display: flex;
     /* background-color: goldenrod; */
+    color: #fff;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -23,7 +28,7 @@ h1 {
 }
 
 nav a {
-    color: black;
+    color: rgb(156, 156, 156);
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -91,7 +96,7 @@ main {
     height: 90%;
     border-radius: 10%;
     min-width:400px;
-    display: block;
+    display: inline-flex;
     transition: .5s ease;
     backface-visibility: hidden;
 }
