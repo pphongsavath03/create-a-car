@@ -9,7 +9,7 @@ Product.init(
       type: DataTypes.INTEGER,
       primaryKey: true,
       allowNull: false,
-      autoIncrement: true
+      autoIncrement: true,
     },
     product_name: {
       type: DataTypes.STRING,
@@ -19,38 +19,46 @@ Product.init(
       type: DataTypes.DECIMAL,
       allowNull: false,
       validate: {
-        isDecimal: true
-      }
+        isDecimal: true,
+      },
     },
     stock: {
       type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 1,
       validate: {
-        isNumeric: true
-      }
+        isNumeric: true,
+      },
     },
     exterior_color: {
       type: DataTypes.INTEGER,
       references: {
         model: 'category',
-        key: 'id'
-      }
+        key: 'id',
+      },
     },
     interior_color: {
       type: DataTypes.INTEGER,
       references: {
         model: 'category',
-        key: 'id'
-      }
+        key: 'id',
+      },
+    },
+    filename: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    description: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     wheels: {
       type: DataTypes.INTEGER,
       references: {
         model: 'category',
-        key: 'id'
-      }
-    }
+        key: 'id',
+      },
+    },
   },
   {
     sequelize,
