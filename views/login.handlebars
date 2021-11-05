@@ -4,14 +4,14 @@
       <div class="form-box">
         <div class="button-box">
           <div id="btn"></div>
-          <button type="button" class="toggle-btn" onclick="login()">
+          <button type="button" class="toggle-btn">
             Log In
           </button>
-          <button type="button" class="toggle-btn" onclick="register()">
+          <button type="button" class="toggle-btn" >
             Register
           </button>
         </div>
-        <form id="login-form" class="input-info" method="GET">
+        <form id="login-form" class="input-info">
           <input
             type="text"
             class="input-field"
@@ -26,38 +26,38 @@
             id="password"
             required
           />
-          <input type="checkbox" class="check-box" /><span
-            >Remember Password</span
-          >
           <button type="submit" class="submit-btn">Log In</button>
+          <button type="submit" class="submit-btn" id="logout">Log Out</button>
         </form>
-        <form id="register" class="input-info" method="POST">
+        <form id="register" class="input-info">
           <input
+            id='username-signup'
             type="text"
             class="input-field"
             placeholder="Choose Username"
             required
           />
           <input
+          id="email-signup"
             type="email"
             class="input-field"
             placeholder="Email Address"
             required
           />
           <input
+          id="password-signup"
             type="text"
             class="input-field"
             placeholder=" Create Password"
             required
           />
-          <input type="checkbox" class="check-box" /><span
-            >I agree to the terms & conditions</span
-          >
           <button type="submit" class="submit-btn">Register</button>
         </form>
       </div>
     </div>
 
     <script src="./js/account-script.js"></script>
+    <script src="../public/js/login.js"></script>
+    <script src="../public/js/logout.js"></script>
  
   
