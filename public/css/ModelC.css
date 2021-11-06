@@ -1,5 +1,7 @@
 * {
-    box-sizing: border-box
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 body {
     width: 100%;
@@ -21,7 +23,7 @@ h1 {
     font-weight: bold;
 }
 nav a {
-    color: black;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -35,12 +37,13 @@ nav a {
     display: inline;
 }
 a:hover {
-    color: goldenrod;
+    color: black;
 }
 .model {
     word-spacing: 10px;
     display: flex;
     justify-content: space-between;
+    color: white;
 }
 .header {
     font-size: px;
@@ -105,6 +108,6 @@ button {
     width: 100%;
 }
 .button:hover {
-    background-color: goldenrod;
+    background-color: black;
     opacity: 1;
 }

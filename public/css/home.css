@@ -23,7 +23,7 @@ h1 {
 }
 
 nav a {
-  color: black;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -41,7 +41,7 @@ nav a {
 }
 
 a:hover {
-  color: goldenrod;
+  color: black;
 }
 
 .model {
@@ -58,12 +58,13 @@ a:hover {
 h2 {
   font-size: 30px;
   margin-left: 15px;
-  color: goldenrod;
+  color: white;
 }
 
 .description p {
   margin-left: 15px;
   font-size: 22px;
+  color: white;
 }
 
 main {
@@ -115,7 +116,7 @@ main {
 
 #cooper {
   background-color: goldenrod;
-  color: black;
+  color: white;
   font-size: 16px;
   padding: 20px 20px;
   border-radius: 10%;
