@@ -1,4 +1,4 @@
-<<<<<<< HEAD:Custom Car Pages/ModelP.html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,21 +32,16 @@
         </div>
 </nav>
 <main>
-    <section class="vehicle">
-      <header>Model P</header>
-      <img src="./assets/images/blue-car.jpg" alt="color-car" />
-=======
+
 <section class="vehicle">
       <header>{{product_name}}</header>
       <img src="../images/{{filename}}" alt="color-car" />
-<<<<<<< HEAD
+
 
       <div>
           {{description}}
       </div>
-=======
->>>>>>> b590eea1b131a986ce47728cbefac8a63aceb70a:views/product.handlebars
->>>>>>> d0767bf41e716918109f2df5a7bf7c9ff1582b03
+
     </section>
     <form>
         <h1>Vehicle Options</h1>
@@ -78,14 +73,16 @@
     </section>
     <section class="radio-container">
         <p>Please select your wheels: </p>
-            <input type="radio"  name="color-choice" id='wheels'>
+            <input type="radio"  name="wheels" id='wheels'>
             <img src="../public/images/default.jpg"> Trackhawk Gloss Black
-            <input type="radio"  name="color-choice" id='wheels'>
+            <input type="radio"  name="wheels" id='wheels'>
             <img src="../public/images/tsw.jpg"> TSW Alloy Silver
-            <input type="radio" name="color-choice" id='wheels'>
+            <input type="radio" name="wheels" id='wheels'>
             <img src="../public/images/vision-18-hellion-gloss-black_1.jpg"> Hellion Gloss Black
     </section>
     <section>
         <button class="button" type="button" id="place-order">Place Order</button>
     </section>
     </form>
+
+    <script src="./js/placeorder.js"></script>
