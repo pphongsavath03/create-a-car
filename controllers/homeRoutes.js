@@ -24,12 +24,21 @@ router.get('/product/:id', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+router.get('/profile', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+  res.render('profile');
+});
+
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');
     return;
   }
-  res.render('login');
+  res.render('login', { title: 'Login', layout: 'custom' });
 });
 
 module.exports = router;
