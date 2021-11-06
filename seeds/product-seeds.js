@@ -7,7 +7,7 @@ const productData = [
     stock: 1,
     category_id: 1,
     filename: 'black-car.jpg',
-    description: 'Lexus',
+    description: 'Lexus LC 500',
   },
   {
     product_name: 'Model D',
@@ -15,7 +15,7 @@ const productData = [
     stock: 1,
     category_id: 1,
     filename: 'orange-car.jpg',
-    description: 'Brand name',
+    description: 'Chevy Corvette C8 Z06',
   },
   {
     product_name: 'Model P',
@@ -23,7 +23,7 @@ const productData = [
     stock: 1,
     category_id: 1,
     filename: 'blue-car.jpg',
-    description: 'Chevy',
+    description: 'Chevy Camero SS',
   },
   {
     product_name: 'Model S',
@@ -31,7 +31,7 @@ const productData = [
     stock: 1,
     category_id: 1,
     filename: 'yellow-car.jpg',
-    description: 'Mercedes Benz',
+    description: 'Mercedes Benz AMG GTR',
   },
 ];
 
