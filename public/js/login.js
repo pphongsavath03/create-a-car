@@ -7,12 +7,18 @@ const loginFormHanlder = async (event) => {
     if (username && password) {
         const response = await fetch ('/api/users/login', {
             method:'POST',
+
+
             body: JSON.stringify({ username, password }),
+
             headers: { 'Content-Type':'application/json' },
         });
 
         if(response.ok) {
-            document.location.replace('/');
+
+            document.location.replace('/product');
+
+
         } else {
             alert( 'Failed to log in');
         }
