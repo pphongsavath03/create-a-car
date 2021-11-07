@@ -1,12 +1,14 @@
 
-
+<nav>
+    <a href="/cart"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a>
+</nav>
 <main>
     <section class="vehicle">
-      <h1>Model P</h1>
+      <h2>{{product_name}}</h2>
       <img src="/images/{{filename}}" alt="color-car" />
     </section>
     <form>
-        <h1>Vehicle Options</h1>
+        <h3 class="option">Vehicle Options</h3>
     <section class="radio-container">
         <p>Please select your vehicle color: </p>
             <input type="radio" id="red" name="color-choice" value="Red">
@@ -22,28 +24,15 @@
     </section>
     <section class="radio-container">
         <p>Please select your interior color: </p>
-            <input type="radio" id="black" name="color-choice" value="Black">
+            <input type="radio" id="red" name="interior-choice" value="Red">
             <label for="red">Red</label><br>
-            <input type="radio" id="orange" name="color-choice" value="Orange">
+            <input type="radio" id="orange" name="interior-choice" value="Orange">
             <label for="orange">Orange</label><br>
-            <input type="radio" id="yellow" name="color-choice" value="Yellow">
+            <input type="radio" id="yellow" name="interior-choice" value="Yellow">
             <label for="yellow">Yellow</label><br>
-            <input type="radio" id="green" name="color-choice" value="Green">
+            <input type="radio" id="green" name="interior-choice" value="Green">
             <label for="green">Green</label><br>
-            <input type="radio" id="blue" name="color-choice" value="Blue">
-            <label for="blue">Blue</label><br>
-    </section>
-    <section class="radio-container">
-        <p>Please select your interior color: </p>
-            <input type="radio" id="red" name="color-choice" value="Red">
-            <label for="red">Red</label><br>
-            <input type="radio" id="orange" name="color-choice" value="Orange">
-            <label for="orange">Orange</label><br>
-            <input type="radio" id="yellow" name="color-choice" value="Yellow">
-            <label for="yellow">Yellow</label><br>
-            <input type="radio" id="green" name="color-choice" value="Green">
-            <label for="green">Green</label><br>
-            <input type="radio" id="blue" name="color-choice" value="Blue">
+            <input type="radio" id="blue" name="interior-choice" value="Blue">
             <label for="blue">Blue</label><br>
     </section>
     <section>

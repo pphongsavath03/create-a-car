@@ -1,13 +1,10 @@
 {{#each products as |product|}}
 <main class="car-container">
       <div class="card">
-        <header>{{product.product_name}}</header>
-        <img src="/images/{{product.filename}}" alt="{{product.description}}"/>
-        <div class="middle" id="one">
-         <a href="/product/{{product.id}}"><div class="customize" id="cooper">Customize</div></a>
-        </div>
+        <h3>{{product.product_name}}</h3>
+        <div>
+        <a  href="/product/{{product.id}}"><img class="grow" src="/images/{{product.filename}}" alt="{{product.description}}"/></a>
+       </div>
       </div>
-
-    
     </main>
     {{/each}}
