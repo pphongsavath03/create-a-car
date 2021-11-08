@@ -4,9 +4,6 @@
 </nav>
 <main>
     <section class="vehicle">
-        <h2>
-        {{product_name}} - ${{price}}
-        </h2>
 
        <div class="cont">            
             <div class = 'productImage'>
@@ -14,10 +11,14 @@
             </div>
 
             <div class = 'textDesc'>
-                <p> {{description}} </p>
-                <li> {{engine}} </li>
-                <li> {{fuel}} </li>
-                <li> {{type}} </li>
+                <h2 class ='carSpecs'>
+                    {{product_name}} - ${{price}}
+                </h2>
+                <p class = 'textDesc'> {{description}} </p>
+                <p class ='carSpecs'>Car Specs:</p>
+                    <li class = 'textDesc'> {{engine}} </li>
+                    <li class = 'textDesc'> {{fuel}} </li>
+                    <li class = 'textDesc'> {{type}} </li>
             </div>
         </div>
     </section>
@@ -25,7 +26,7 @@
     <section>
         <h3 class="option">Vehicle Options</h3>
         <div>
-        <button class="button" type="button" id="place-order" onclick="myFunction()" >Place Order</button>
+        <button class="button" type="button" id="place-order" onclick="myFunction()" >Order Now</button>
         </div>
     </section>
 
