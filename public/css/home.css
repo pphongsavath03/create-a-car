@@ -111,6 +111,37 @@ main {
   transform: scale(1.05);
 }
 
+p {
+  color: white;
+  font-size: 20px;
+}
+
+.option {
+  color: white;
+  text-decoration: underline;
+  font-size: 35px;
+}
+
+form {
+  color: white;
+  font-size: 15px;
+}
+
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.textDesc {
+  padding-right: 20px;
+  padding-left: 10px;
+  color: white;
+  font-size: 20px;
+
+}
+
 @media only screen and (max-width: 936px) {
   .card header {
     color: goldenrod;
