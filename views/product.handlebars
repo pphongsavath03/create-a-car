@@ -1,9 +1,10 @@
 
-
+<nav>
+    <a href="/cart"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a>
+</nav>
 <main>
     <section class="vehicle">
-      <h1>Model P</h1>
-      <div>
+      <h2>{{product_name}}</h2>
       <img src="/images/{{filename}}" alt="color-car" />
 
       <p> {{description}} </p>
@@ -12,7 +13,7 @@
 
     
     <form>
-        <h1>Vehicle Options</h1>
+        <h3 class="option">Vehicle Options</h3>
     <section class="radio-container">
         <p>Please select your vehicle color: </p>
             <input type="radio" name="color-choice" value="Red" id="ex-color">
