@@ -52,6 +52,18 @@ Product.init(
       type: DataTypes.TEXT,
       allowNull: false,
     },
+    engine: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+    },
+    fuel: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+    },
+    type: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+    },
     wheels: {
       type: DataTypes.INTEGER,
       references: {
