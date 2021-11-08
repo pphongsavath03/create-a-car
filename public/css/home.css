@@ -137,6 +137,9 @@ form {
 .textDesc {
   padding-right: 20px;
   padding-left: 10px;
+  color: white;
+  font-size: 20px;
+
 }
 
 @media only screen and (max-width: 936px) {
