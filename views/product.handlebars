@@ -4,38 +4,82 @@
 </nav>
 <main>
     <section class="vehicle">
-      <h2>{{product_name}}</h2>
-      <img src="/images/{{filename}}" alt="color-car" />
+
+       <div class="cont">            
+            <div class = 'productImage'>
+                <img src="/images/{{filename}}" alt="color-car" id='productImg' />
+            </div>
+
+            <div class = 'textDesc'>
+                <h2 class ='carSpecs'>
+                    {{product_name}} - ${{price}}
+                </h2>
+                <p class = 'textDesc'> {{description}} </p>
+                <p class ='carSpecs'>Car Specs:</p>
+                    <li class = 'textDesc'> {{engine}} </li>
+                    <li class = 'textDesc'> {{fuel}} </li>
+                    <li class = 'textDesc'> {{type}} </li>
+            </div>
+        </div>
     </section>
-    <form>
-        <h3 class="option">Vehicle Options</h3>
-    <section class="radio-container">
-        <p>Please select your vehicle color: </p>
-            <input type="radio" id="red" name="color-choice" value="Red">
-            <label for="red">Red</label><br>
-            <input type="radio" id="orange" name="color-choice" value="Orange">
-            <label for="orange">Orange</label><br>
-            <input type="radio" id="yellow" name="color-choice" value="Yellow">
-            <label for="yellow">Yellow</label><br>
-            <input type="radio" id="green" name="color-choice" value="Green">
-            <label for="green">Green</label><br>
-            <input type="radio" id="blue" name="color-choice" value="Blue">
-            <label for="blue">Blue</label><br>
-    </section>
-    <section class="radio-container">
-        <p>Please select your interior color: </p>
-            <input type="radio" id="red" name="interior-choice" value="Red">
-            <label for="red">Red</label><br>
-            <input type="radio" id="orange" name="interior-choice" value="Orange">
-            <label for="orange">Orange</label><br>
-            <input type="radio" id="yellow" name="interior-choice" value="Yellow">
-            <label for="yellow">Yellow</label><br>
-            <input type="radio" id="green" name="interior-choice" value="Green">
-            <label for="green">Green</label><br>
-            <input type="radio" id="blue" name="interior-choice" value="Blue">
-            <label for="blue">Blue</label><br>
-    </section>
+
     <section>
-        <button class="button" type="button">Submit</button>
+        <h3 class="option">Vehicle Options</h3>
+        <div>
+        <button class="button" type="button" id="place-order" onclick="myFunction()" >Order Now</button>
+        </div>
     </section>
-    </form>
+
+        <div>   
+            <form>
+                <section class="radio-container">
+                    <p>Please select your vehicle color: </p>
+                        <input type="radio" name="color-choice" id="ex-color">
+                        <label for="red">Red</label><br>
+                        <input type="radio" name="color-choice"  id="ex-color">
+                        <label for="orange">Orange</label><br>
+                        <input type="radio" name="color-choice" id="ex-color">
+                        <label for="yellow">Yellow</label><br>
+                        <input type="radio" name="color-choice" id="ex-color">
+                        <label for="Black">Black</label><br>
+                        <input type="radio" name="color-choice" id="ex-color">
+                        <label for="blue">Blue</label><br>
+                        <input type="radio" name="color-choice" id="ex-color">
+                        <label for="White">White</label><br>
+                </section>
+            </form>
+        </div>
+
+            <form>
+                <section class="radio-container">
+                    <p>Please select your interior color: </p>
+                        <input type="radio" name="color-choice" value="Red" id="int-color">
+                        <label for="red">Red</label><br>
+                        <input type="radio" name="color-choice" value="Black" id="int-color">
+                        <label for="black">Black</label><br>
+                        <input type="radio" name="color-choice" value="White" id="int-color">
+                        <label for="white">White</label><br>
+                </section>
+            </form>
+
+            <form>
+                <section class="radio-container">
+                    <p>Please select your wheels: </p>
+                        <input type="radio"  name="wheels" value= 'Trackhawk Gloss Black' id='wheels'>
+                        <label for="red">Trackhawk Gloss Black</label><br>
+                        <input type="radio"  name="wheels" value='TSW Alloy Silver' id='wheels'>
+                        <label for="red">TSW Alloy Silver</label><br>
+                        <input type="radio" name="wheels" value='Hellion Gloss Black' id='wheels'>
+                        <label for="red">Hellion Gloss Black</label><br>
+                </section>
+                <br>    
+            </form>
+
+        <script>
+        function myFunction() {
+        alert('Your Order has been placed. ')
+        }
+        </script>
+
+</main>
+
