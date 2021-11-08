@@ -3,8 +3,14 @@
 <main>
     <section class="vehicle">
       <h1>Model P</h1>
+      <div>
       <img src="/images/{{filename}}" alt="color-car" />
+
+      <p> {{description}} </p>
+      </div>
     </section>
+
+    
     <form>
         <h1>Vehicle Options</h1>
     <section class="radio-container">
@@ -35,16 +41,31 @@
     </section>
     <section class="radio-container">
         <p>Please select your wheels: </p>
-            <input type="radio"  name="wheels" id='wheels'>
+            <input type="radio"  name="wheels" value= 'Trackhawk Gloss Black' id='wheels'>
             <img src="../public/images/default.jpg"> Trackhawk Gloss Black
-            <input type="radio"  name="wheels" id='wheels'>
+            <input type="radio"  name="wheels" value='TSW Alloy Silver' id='wheels'>
             <img src="../public/images/tsw.jpg"> TSW Alloy Silver
-            <input type="radio" name="wheels" id='wheels'>
+            <input type="radio" name="wheels" value='Hellion Gloss Black' id='wheels'>
             <img src="../public/images/vision-18-hellion-gloss-black_1.jpg"> Hellion Gloss Black
     </section>
     <section>
-        <button class="button" type="button" id="place-order">Place Order</button>
+        <button class="button" type="button" id="place-order" onclick="myFunction()" >Place Order</button>
     </section>
     </form>
 
-    <script src="./js/placeorder.js"></script>
+    <p id="demo"></p>
+
+<script>
+function myFunction() {
+  var exColor = document.getElementById("ex-color").value;
+  var intColor = document.getElementById("int-color").value;
+  var wheels = document.getElementById("wheels").value;
+
+  document.getElementById("demo").innerHTML = exColor;
+  document.getElementById("demo").innerHTML = intColor;
+  document.getElementById("demo").innerHTML = wheels;
+}
+</script>
+
+</main>
+
