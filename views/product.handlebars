@@ -1,88 +1,66 @@
-<<<<<<< HEAD:Custom Car Pages/ModelP.html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Model P</title>
-    <link rel= "stylesheet" href="/assets/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-</head>
-<body>
-    <nav class="nav-container">
-        <div>
-            <h1 class=name-header><a href="home.html">Create-A-Car</a></h1>
-        </div>
-        <div class="model">
-            <ul class="car">
-                <li><a href="#Cooper">Model C</a></li>
-                <li><a href="#Desiree">Model D</a></li>
-                <li><a href="#Phon">Model P</a></li>
-                <li><a href="#Samira">Model S</a></li>
-            </ul>
-        </div>
-        <div>
-            <ul class="account">
-                <li><a href="account-index.html">Account</a></li>
-            </ul>
-        </div>
+<nav>
+    <a href="/cart"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a>
 </nav>
 <main>
     <section class="vehicle">
-      <header>Model P</header>
-      <img src="./assets/images/blue-car.jpg" alt="color-car" />
-=======
-<section class="vehicle">
-      <header>{{product_name}}</header>
-      <img src="../images/{{filename}}" alt="color-car" />
->>>>>>> b590eea1b131a986ce47728cbefac8a63aceb70a:views/product.handlebars
+         <h2 class ='carSpec'>
+                    {{product_name}}
+                </h2>
+       <div class="cont">            
+            <div class = 'productImage'>
+                <img class="carImg" src="/images/{{filename}}" alt="color-car" id='productImg' />
+            </div>
+
+            <div class = 'textDesc'>
+                <h2 class ='carPrice'>
+                    ${{price}}
+                </h2>
+                <p class = 'textDesc'> {{description}} </p>
+                <p class ='carSpecs'>Car Specs:</p>
+                    <li class = 'textDesc'> {{engine}} </li>
+                    <li class = 'textDesc'> {{fuel}} </li>
+                    <li class = 'textDesc'> {{type}} </li>
+            </div>
+        </div>
     </section>
-    <form>
-        <h1>Vehicle Options</h1>
-    <section class="radio-container">
-        <p>Please select your vehicle color: </p>
-            <input type="radio" id="red" name="color-choice" value="Red">
-            <label for="red">Red</label><br>
-            <input type="radio" id="orange" name="color-choice" value="Orange">
-            <label for="orange">Orange</label><br>
-            <input type="radio" id="yellow" name="color-choice" value="Yellow">
-            <label for="yellow">Yellow</label><br>
-            <input type="radio" id="green" name="color-choice" value="Green">
-            <label for="green">Green</label><br>
-            <input type="radio" id="blue" name="color-choice" value="Blue">
-            <label for="blue">Blue</label><br>
-    </section>
-    <section class="radio-container">
-        <p>Please select your interior color: </p>
-            <input type="radio" id="black" name="color-choice" value="Black">
-            <label for="red">Red</label><br>
-            <input type="radio" id="orange" name="color-choice" value="Orange">
-            <label for="orange">Orange</label><br>
-            <input type="radio" id="yellow" name="color-choice" value="Yellow">
-            <label for="yellow">Yellow</label><br>
-            <input type="radio" id="green" name="color-choice" value="Green">
-            <label for="green">Green</label><br>
-            <input type="radio" id="blue" name="color-choice" value="Blue">
-            <label for="blue">Blue</label><br>
-    </section>
-    <section class="radio-container">
-        <p>Please select your interior color: </p>
-            <input type="radio" id="red" name="color-choice" value="Red">
-            <label for="red">Red</label><br>
-            <input type="radio" id="orange" name="color-choice" value="Orange">
-            <label for="orange">Orange</label><br>
-            <input type="radio" id="yellow" name="color-choice" value="Yellow">
-            <label for="yellow">Yellow</label><br>
-            <input type="radio" id="green" name="color-choice" value="Green">
-            <label for="green">Green</label><br>
-            <input type="radio" id="blue" name="color-choice" value="Blue">
-            <label for="blue">Blue</label><br>
-    </section>
+
     <section>
-        <button class="button" type="button">Submit</button>
+        <h3 class="option">Vehicle Options</h3>
+        <div>
+        <button class="button" type="button" id="place-order">Order Now</button>
+        </div>
     </section>
-    </form>
+            <form>
+                <label>Please select your vehicle color:
+                    <select id="ext-color-choice" name="car-color">
+                         <option value="" selected disabled hidden>Choose here</option>
+                        <option value="Red">Red</option>
+                        <option value="Black">Black</option>
+                        <option value="Blue">Blue</option>
+                        <option value="White">White</option>
+                    </select>
+                </label>
+<br>
+                <label>Please select your interior color:
+                    <select id="int-color-choice" name="interior-choice">
+                         <option value="" selected disabled hidden>Choose here</option>
+                        <option value="Red">Red</option>
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                    </select>
+                </label>
+            <br>
+                <label>Please select your wheels:
+                    <select id="wheel-choice" name="wheels">
+                         <option value="" selected disabled hidden>Choose here</option>
+                        <option value="Trackhawk Gloss Black">Trackhawk Gloss Black</option>
+                        <option value="TSW Alloy Silver">TSW Alloy Silver</option>
+                        <option value="Hellion Gloss Black">Hellion Gloss Black</option>
+                    </select>
+                </label>
+            </form>
+        <script src="/js/product.js">
+        </script>
+</main>
+

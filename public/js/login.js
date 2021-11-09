@@ -1,3 +1,20 @@
+var loginEl = document.getElementById("login");
+var RegisterEl = document.getElementById("register");
+var ToggleBtn = document.getElementById("btn");
+
+function register() {
+    loginEl.style.left = "-400px";
+    RegisterEl.style.left = "50px";
+    ToggleBtn.style.left = "110px";
+}
+
+function login() {
+    loginEl.style.left = "50px";
+    RegisterEl.style.left = "450px";
+    ToggleBtn.style.left = "0px";
+}
+
+
 const loginFormHanlder = async (event) => {
     event.preventDefault();
 
@@ -7,18 +24,12 @@ const loginFormHanlder = async (event) => {
     if (username && password) {
         const response = await fetch ('/api/users/login', {
             method:'POST',
-
-
             body: JSON.stringify({ username, password }),
-
             headers: { 'Content-Type':'application/json' },
         });
 
         if(response.ok) {
-
-            document.location.replace('/product');
-
-
+            document.location.replace('/');
         } else {
             alert( 'Failed to log in');
         }
@@ -47,5 +58,6 @@ const signupFormHandler = async (event) => {
     }
 };
 
-document.querySelector('#login-form').addEventListener('submit', loginFormHanlder);
-document.querySelector('#register').addEventListener('submit', signupFormHandler);
+
+document.querySelector('#login-btn').addEventListener('click', loginFormHanlder);
+document.querySelector('#register-btn').addEventListener('click', signupFormHandler);

@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/product/:id', withAuth, async (req, res) => {
+router.get('/product/:id',  async (req, res) => {
   try {
     const productData = await Product.findByPk(req.params.id);
     const product = productData.get({ plain: true });
@@ -25,12 +25,9 @@ router.get('/product/:id', withAuth, async (req, res) => {
   }
 });
 
-router.get('/profile', (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect('/');
-    return;
-  }
-  res.render('profile');
+router.get('/cart', (req, res) => {
+
+  res.render('cart', { title: 'Login', layout: 'cart-layout' });
 });
 
 router.get('/login', (req, res) => {

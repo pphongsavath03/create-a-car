@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "bulma": "^0.9.3",
     "connect-session": "0.0.1",
     "connect-session-sequelize": "^7.1.2",
     "dotenv": "^10.0.0",
@@ -30,5 +31,10 @@
   "bugs": {
     "url": "https://github.com/pphongsavath03/create-a-car/issues"
   },
-  "homepage": "https://github.com/pphongsavath03/create-a-car#readme"
+  "homepage": "https://github.com/pphongsavath03/create-a-car#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19"
+  }
 }

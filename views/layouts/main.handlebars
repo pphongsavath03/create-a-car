@@ -4,32 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create-A-Car</title>
+    <title>Create-sla</title>
     <link rel="stylesheet"  href="/css/home.css" />
+    <link rel="stylesheet"  href="/css/slideshow.css" />
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   </head>
   <body>
     <nav class="nav-container">
       <div>
-        <h1 class="name-header"><a href="/">Cresla</a></h1>
+        <h1 class="name-header"><a href="/">Create-sla</a></h1>
       </div>
       <div class="model">
         <ul class="car">
-          <li><a href="/product/1">Model C</a></li>
-          <li><a href="/product/2">Model D</a></li>
-          <li><a href="/product/3">Model P</a></li>
-          <li><a href="/product/4">Model S</a></li>
+          <li class="intro"><a href="/product/1">Model C</a></li>
+          <li class="intro"><a href="/product/2">Model D</a></li>
+          <li class="intro"><a href="/product/3">Model P</a></li>
+          <li class="intro"><a href="/product/4">Model S</a></li>
         </ul>
       </div>
-      <div>
+      <div >
+      {{!-- {{#if logged_in}}
+        <a href="/profile">profile</a> |
+        <button class="no-button" id="logout">logout</button>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}} --}}
+
         <ul class="account">
           <li><a href="/login">Login/SignUp</a></li>
+   
         </ul>
+      
       </div>
     </nav>
-
-    <div class="description">
-      <h2>Model Selection</h2>
-      <p>Select a model and being customizing</p>
-    </div>
+    <div class = 'column'>
+      
     {{{ body }}}
+    </div>
   </body>
+
+      <script src="./js/slideshow.js"></script>
+
