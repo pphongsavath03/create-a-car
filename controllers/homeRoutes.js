@@ -25,12 +25,9 @@ router.get('/product/:id',  async (req, res) => {
   }
 });
 
-router.get('/profile', (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect('/');
-    return;
-  }
-  res.render('profile');
+router.get('/cart', (req, res) => {
+
+  res.render('cart', { title: 'Login', layout: 'cart-layout' });
 });
 
 router.get('/login', (req, res) => {
