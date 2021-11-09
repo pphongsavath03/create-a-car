@@ -1,22 +1,22 @@
 [
   {
-    "username": "Desiree",
-    "email": "desiree@live.com",
-    "password": "Password1234"
+    "userame": "Desiree",
+    "email": "desiree@gmail.com",
+    "password": "password4"
   },
   {
-    "username": "Phon",
+    "userame": "Phon",
     "email": "phon@gmail.com",
-    "password": "Password1234"
+    "password": "password3"
   },
   {
-    "username": "Cooper",
-    "email": "cooper@aol.com",
-    "password": "Password1234"
+    "userame": "Cooper",
+    "email": "cooper@gmail.com",
+    "password": "password2"
   },
   {
-    "username": "Samira",
-    "email": "samira@hotmail.com",
-    "password": "Password1234"
+    "userame": "Samira",
+    "email": "samira@gmail.com",
+    "password": "password1"
   }
 ]

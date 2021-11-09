@@ -21,7 +21,7 @@ const productData = [
     description: 'The Model D is expected to elevate the iconic nameplate into territory occupied by exotics from Ferrari and Lamborghini. Its naturally aspirated 5.5-liter V-8 features a flat-plane crank and revs to 8600 rpm. The engine produces 670 horsepower and has a Ferrari-like howl that will send shivers down the spine of bystanders.',
     engine: 'Pushrod 16-valve V-8, aluminum block and heads, direct fuel injection',
     fuel:'75-mph highway driving: 26 mpg',
-    type:'mid-engine, rear-wheel-drive, 2-passenger, 2-door targa'
+    type:'Mid-engine, rear-wheel-drive, 2-passenger, 2-door targa'
   },
   {
     product_name: 'Model P',
