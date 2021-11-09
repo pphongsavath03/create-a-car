@@ -1,10 +1,28 @@
-{{#each products as |product|}}
-<main class="car-container">
-      <div class="card">
-        <h3>{{product.product_name}}</h3>
-        <div>
-        <a  href="/product/{{product.id}}"><img class="grow" src="/images/{{product.filename}}" alt="{{product.description}}"/></a>
-       </div>
+<body>
+
+<h2 class="welcome">Build Your Own Model</h2>
+  {{#each products as |product|}}
+  {{!-- <main class="car-container">
+        <div class="card">
+          <h3>{{product.product_name}}</h3>
+          <div>
+          <a  href="/product/{{product.id}}"><img src="/images/{{product.filename}}" alt="{{product.description}}"/></a>
+        </div>
+        </div>
+      </main> --}}
+
+  <section>
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+          <img src="/images/{{product.filename}}" style="width:100%">
+        <div class="text">{{product.product_name}}</div>
       </div>
-    </main>
-    {{/each}}
+    </div>
+  </section>
+
+
+
+      {{/each}}
+</body>

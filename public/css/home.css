@@ -6,6 +6,10 @@ body {
   width: 100%;
   margin: 0;
   background-image: url("../images/highwaybackdrop.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:center;
+  background-size: cover;
 }
 
 .nav-container {
@@ -72,6 +76,17 @@ h2 {
   color: goldenrod;
 }
 
+.welcome {
+  font-size: 45px;
+  margin-left: 15px;
+  color:black;
+  text-align: center;
+}
+
+.intro {
+text-decoration: underline;
+}
+
 .description p {
   margin-left: 15px;
   font-size: 22px;
@@ -136,6 +151,7 @@ form {
 .carSpecs {
   color: black;
   font-size: 35px;
+  font-weight: bolder;
   padding-right: 20px;
   padding-left: 10px;
   text-decoration: underline;
@@ -148,6 +164,7 @@ form {
   padding-left: 10px;
   color: black;
   font-size: 20px;
+  font-weight: bold;
 
 }
 
