@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/product/:id',  async (req, res) => {
+router.get('/product/:id',withAuth,  async (req, res) => {
   try {
     const productData = await Product.findByPk(req.params.id);
     const product = productData.get({ plain: true });
@@ -25,7 +25,7 @@ router.get('/product/:id',  async (req, res) => {
   }
 });
 
-router.get('/cart', (req, res) => {
+router.get('/cart', withAuth, (req, res) => {
 
   res.render('cart', { title: 'Login', layout: 'cart-layout' });
 });
