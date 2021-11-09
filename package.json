@@ -31,5 +31,10 @@
   "bugs": {
     "url": "https://github.com/pphongsavath03/create-a-car/issues"
   },
-  "homepage": "https://github.com/pphongsavath03/create-a-car#readme"
+  "homepage": "https://github.com/pphongsavath03/create-a-car#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19"
+  }
 }
