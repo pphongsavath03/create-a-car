@@ -19,7 +19,7 @@ function addToCart (){
        let cartItem = document.createElement("div")
        cartItem.classList.add("flex")
          cartItem.innerHTML = `
-            <div class="flex"><img class="w-6/12 mb-2" src=${carObj.img}>
+            <div class="flex"><img class="w-6/12 mb-2 rounded-lg mr-2" src=${carObj.img}>
             <ul class="text-xs md:text-lg self-center">
             <li>${carObj.model}</li>
             <li id="color">Color: ${carObj.exteriorColor}</li>
@@ -35,32 +35,3 @@ function addToCart (){
     }
 }
 displayCart()
-// const carDesc = document.querySelector(".car-desc")
-// let cartRow = document.createElement("table");
-//     cartRow.classList.add("table-auto,m-2")
-//     cartRow.innerHTML =`<thead class="text-sm md:text-xl">
-//     <tr>
-//     <th class="text-left text-lg p-2">Product</th>
-//      <th></th>
-//  </tr>
-// </thead>
-// <tbody class="tBody"></tbody>`
-
-
-// function addToCart(exteriorColorChoice, interiorColorChoice, wheelChoice){
-//     location.assign("/cart")
-//     let cartItem = ` <tr>
-//     <td class="flex"><img class="w-6/12 mb-2" src="/images/black-car.jpg">
-//          <ul class="text-xs md:text-lg self-center car-desc">
-//          <li>Color: ${exteriorColorChoice}</li>
-//          <li>Interior: ${interiorColorChoice}</li>
-//          <li>Wheels:${wheelChoice}</li>
-//      </ul>
-//  </td>
-//     <td><label class="flex">Qty: <input type="number" value="1" min="1" max="5" class="ml-2" ></label></td>
-//     <td>$100000</td>  
-// </tr>`
-// cartRow.append(cartItem)
-// }
-
-

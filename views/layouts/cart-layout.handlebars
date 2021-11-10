@@ -4,25 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
      <link rel="stylesheet" href="/css/tailwind.css">  
-    <title>Document</title>
+    <title>Create-sla</title>
 </head>
-<body>
-    <nav class="flex justify-between p-2 text-lg md:text-2xl font-serif">
+<body >
+    <nav class="flex bg-gradient-to-r from-yellow-300 via-yellow-200 to-yellow-300 justify-between p-2 text-lg md:text-2xl font-serif">
         <div>
-          <h1 class="uppercase hover:text-yellow-500 md:text-3xl"><a href="/">Create-sla</a></h1>
+          <h1 class="uppercase hover:text-yellow-900 md:text-3xl"><a href="/">Create-sla</a></h1>
         </div>
-        <div class="mx-4">
-          <ul class="flex uppercase ">
+        <div class="mx-4 ">
+          <ul class="flex flex-col uppercase md:flex-row ">
             <li class="mx-2 hover:text-yellow-500"><a href="/product/1">Model C</a></li>
             <li class="mx-2 hover:text-yellow-500"><a href="/product/2">Model D</a></li>
             <li class="mx-2 hover:text-yellow-500"><a href="/product/3">Model P</a></li>
             <li class="mx-2 hover:text-yellow-500"><a href="/product/4">Model S</a></li>
           </ul>
         </div>
-        <div class="hover:text-yellow-500 "><a href="/">Logout</a></div>
+        <div>
+         <a href="/cart"><i class="fa fa-shopping-cart fa-lg hover:text-yellow-500 mr-2" aria-hidden="true"></i></a>
+          <a  class="hover:text-yellow-500" id="logout">Logout</a>
+        </div>
       </nav>
     {{{body}}}
+ 
+<script src="/js/logout.js"></script>
 </body>
 </html>
 

@@ -8,7 +8,6 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.3.4",
     "express-session": "^1.17.2",
-    "heroku": "^7.59.1",
     "mysql2": "^2.3.2",
     "node": "^17.0.1",
     "nodemon": "^2.0.14",
@@ -17,8 +16,8 @@
   },
   "scripts": {
     "start": "node server.js",
-    "seed": "node seeds/index.js",
-    "build": "NODE_ENV=production postcss  ./src/tailwindcss.css -o ./public/css/tailwind.css"
+    "seed": "node seeds/index.js"
+  
   },
   "name": "create-a-car",
   "description": "create a car",

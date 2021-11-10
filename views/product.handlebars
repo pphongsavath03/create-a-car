@@ -1,39 +1,32 @@
-
-<nav>
-    <a href="/cart"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a>
-</nav>
-<main>
-    <section class="vehicle">
-         <h2 class ='carSpec'>
-                    {{product_name}}
+    <section class="vehicle mb-4 md:flex md:m-4 p-2">
+        <div class = 'productImage mb-4 md:w-full'>
+                <img class="carImg md:rounded-lg w-full md:h-full" src="/images/{{filename}}" alt="color-car" id='productImg' />
+        </div>
+        <div class = 'textDesc p-2 text-base md:ml-4 md:w-full self-center'>
+            <section class="text-2xl text-yellow-600 md:text-4xl flex">
+                <h2 class ='carSpec mr-2 my-2'>
+                    {{product_name}} 
                 </h2>
-       <div class="cont">            
-            <div class = 'productImage'>
-                <img class="carImg" src="/images/{{filename}}" alt="color-car" id='productImg' />
-            </div>
-
-            <div class = 'textDesc'>
-                <h2 class ='carPrice'>
-                    ${{price}}
+                <h2 class ='carPrice my-2'>
+                    - ${{price}}
                 </h2>
+            </section>
                 <p class = 'textDesc'> {{description}} </p>
-                <p class ='carSpecs'>Car Specs:</p>
-                    <li class = 'textDesc'> {{engine}} </li>
-                    <li class = 'textDesc'> {{fuel}} </li>
-                    <li class = 'textDesc'> {{type}} </li>
-            </div>
+                <p class ='carSpecs my-2'>Car Specs:</p>
+                  <li class = 'textDesc'> {{engine}} </li>
+                  <li class = 'textDesc'> {{fuel}} </li>
+                  <li class = 'textDesc'> {{type}} </li>
         </div>
     </section>
 
-    <section>
-        <h3 class="option">Vehicle Options</h3>
+    <section class="flex flex-col md:w-9/12 md:m-auto mb-4">
         <div>
-        <button class="button" type="button" id="place-order">Order Now</button>
-        </div>
-    </section>
-            <form>
-                <label>Please select your vehicle color:
-                    <select id="ext-color-choice" name="car-color">
+            <form class="flex flex-col bg-gradient-to-r from-yellow-200 via-yellow-600 to-yellow-300 rounded-lg mx-6 p-2">
+                <div>
+                    <h3 class="text-xl text-center mb-4 b">Vehicle Options</h3>
+                </div>
+                <label>Select vehicle color:
+                    <select class="mt-4 w-7/12" id="ext-color-choice" name="car-color">
                          <option value="" selected disabled hidden>Choose here</option>
                         <option value="Red">Red</option>
                         <option value="Black">Black</option>
@@ -41,26 +34,34 @@
                         <option value="White">White</option>
                     </select>
                 </label>
-<br>
-                <label>Please select your interior color:
-                    <select id="int-color-choice" name="interior-choice">
+                <br>
+                <label>Select interior color:
+                    <select class="w-7/12" id="int-color-choice" name="interior-choice">
                          <option value="" selected disabled hidden>Choose here</option>
                         <option value="Red">Red</option>
                         <option value="Black">Black</option>
                         <option value="White">White</option>
                     </select>
                 </label>
-            <br>
-                <label>Please select your wheels:
-                    <select id="wheel-choice" name="wheels">
+                <br>
+                <label>Select wheels:
+                    <select class="mb-4 w-9/12" id="wheel-choice" name="wheels">
                          <option value="" selected disabled hidden>Choose here</option>
                         <option value="Trackhawk Gloss Black">Trackhawk Gloss Black</option>
                         <option value="TSW Alloy Silver">TSW Alloy Silver</option>
                         <option value="Hellion Gloss Black">Hellion Gloss Black</option>
                     </select>
                 </label>
+               
+                <div class="self-center">
+                    <button class="bg-yellow-300 my-4 p-2 rounded hover:bg-yellow-900 hover:text-white" type="button" id="place-order">Order Now</button>
+                    
+                </div>
             </form>
-        <script src="/js/product.js">
+        </div>
+    </section>
+
+     <script src="/js/product.js">
         </script>
-</main>
+
 
