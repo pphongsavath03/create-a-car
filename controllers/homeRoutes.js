@@ -26,14 +26,10 @@ router.get('/product/:id',withAuth,  async (req, res) => {
 });
 
 router.get('/cart', withAuth, (req, res) => {
-  res.render('cart', { loggedIn: req.session.loggedIn, title: 'Login', layout: 'cart-layout' });
+  res.render('cart', { loggedIn: req.session.loggedIn, title: 'cart', layout: 'cart-layout' });
 });
 
 router.get('/login', (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect('/');
-    return;
-  }
   res.render('login', { title: 'Login', layout: 'custom' });
 });
 
