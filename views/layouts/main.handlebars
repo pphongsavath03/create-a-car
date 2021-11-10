@@ -25,17 +25,17 @@
         </ul>
       </div>
       <div >
-      {{#if logged_in}}
-        
+      {{!-- {{#if logged_in}}
+        <a href="/profile">profile</a> |
         <button class="no-button" id="logout">logout</button>
         {{else}}
-          <ul class="account">
+        <a href="/login">login</a>
+        {{/if}} --}}
+
+        <ul class="account">
           <li><a href="/login">Login/SignUp</a></li>
    
         </ul>
-        {{/if}}
-
-     
       
       </div>
     </nav>
@@ -45,5 +45,6 @@
     </div>
   </body>
 
-      <script src="./js/slideshow.js"></script>
-
+      <script src="/js/slideshow.js"></script>
+</body>
+</html>
