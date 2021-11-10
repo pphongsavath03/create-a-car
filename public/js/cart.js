@@ -19,7 +19,7 @@ function addToCart (){
        let cartItem = document.createElement("div")
        cartItem.classList.add("flex")
          cartItem.innerHTML = `
-            <div class="flex"><img class="w-6/12 mb-2" src=${carObj.img}>
+            <div class="flex"><img class="w-6/12 mb-2 rounded-lg mr-2" src=${carObj.img}>
             <ul class="text-xs md:text-lg self-center">
             <li>${carObj.model}</li>
             <li id="color">Color: ${carObj.exteriorColor}</li>
