@@ -125,6 +125,11 @@ main {
   backface-visibility: hidden;
   
 }
+.no-button{
+  background: none;
+  border: none;
+  text-decoration: none;
+}
 .grow:hover {
   transform: scale(1.05);
 }

@@ -1,36 +1,19 @@
 
-<nav>
-    <a href="/cart"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a>
-</nav>
-<main>
-    <section class="vehicle">
-         <h2 class ='carSpec'>
-                    {{product_name}}
+   <section class="text-4xl flex">
+         <h2 class ='carSpec mr-2'>
+                    {{product_name}} -
                 </h2>
-       <div class="cont">            
-            <div class = 'productImage'>
-                <img class="carImg" src="/images/{{filename}}" alt="color-car" id='productImg' />
-            </div>
-
-            <div class = 'textDesc'>
                 <h2 class ='carPrice'>
                     ${{price}}
                 </h2>
-                <p class = 'textDesc'> {{description}} </p>
-                <p class ='carSpecs'>Car Specs:</p>
-                    <li class = 'textDesc'> {{engine}} </li>
-                    <li class = 'textDesc'> {{fuel}} </li>
-                    <li class = 'textDesc'> {{type}} </li>
-            </div>
-        </div>
-    </section>
+   </section>
 
-    <section>
-        <h3 class="option">Vehicle Options</h3>
+   <section class="flex">
+         <div class = 'productImage'>
+                <img class="carImg" src="/images/{{filename}}" alt="color-car" id='productImg' />
+            </div>
         <div>
-        <button class="button" type="button" id="place-order">Order Now</button>
-        </div>
-    </section>
+        <h3 class="option">Vehicle Options</h3>
             <form>
                 <label>Please select your vehicle color:
                     <select id="ext-color-choice" name="car-color">
@@ -59,8 +42,31 @@
                         <option value="Hellion Gloss Black">Hellion Gloss Black</option>
                     </select>
                 </label>
+                 <div>
+        <button class="button" type="button" id="place-order">Order Now</button>
+        </div>
             </form>
+        </div>
+                  
+          
+   </section>
+    <section class="vehicle">
+       
+       
+
+            <div class = 'textDesc'>
+                
+                <p class = 'textDesc'> {{description}} </p>
+                <p class ='carSpecs'>Car Specs:</p>
+                    <li class = 'textDesc'> {{engine}} </li>
+                    <li class = 'textDesc'> {{fuel}} </li>
+                    <li class = 'textDesc'> {{type}} </li>
+            </div>
+        </div>
+    </section>
+
+    
         <script src="/js/product.js">
         </script>
-</main>
+
 
